@@ -44,13 +44,13 @@ body {
   padding: 15px 20px;
   border: none;
   margin-bottom: 30px;
-  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.493);
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.493);
   cursor: pointer;
   transition: all 0.4s;
 }
 
 .button-CTA:hover {
-  box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.623);
+  box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.623);
   transform: scale(1.01);
   opacity: 0.9;
 }
