@@ -55,10 +55,7 @@ body {
   opacity: 0.9;
 }
 
-.button-CTA {
-  margin: 30px 0 40px 0;
-  padding: 15px 40px;
-}
+
 
 /*********Header*********/
 header {
@@ -68,7 +65,7 @@ header {
   position: relative;
 }
 
-.header__logo {
+header .header__logo {
   display: flex;
   justify-content: center;
   padding: 15px;
@@ -76,16 +73,16 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .header__logo {
+  header .header__logo {
     box-shadow: none;
   }
 }
-.header__logo img {
+header .header__logo img {
   width: 200px;
   height: 40px;
 }
 
-.header__gps-container {
+header .header__gps-container {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -97,22 +94,16 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .header__gps-container {
+  header .header__gps-container {
     border-top: none;
   }
 }
-@media screen and (min-width: 768px) {
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.fa-location-dot {
+
+header .header__gps-container .fa-location-dot {
   font-size: larger;
 }
 
-input {
+header .header__gps-container input {
   border: none;
   padding: 5px;
   font-size: 16px;
@@ -121,16 +112,23 @@ input {
   width: 130px;
 }
 
-input:focus {
+header .header__gps-container input:focus {
   outline: 3px solid #9356dc;
   border-radius: 5px;
 }
 
-.label-content {
+header .header__gps-container .label-content {
   font-size: 0;
 }
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
-/*loader*/
+/*animation du loader*/
 .loader {
   display: flex;
   justify-content: center;
@@ -199,14 +197,14 @@ input:focus {
   font-weight: 700;
 }
 
-.fonctionnement__choix-container {
+.fonctionnement .fonctionnement__choix-container {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
 @media screen and (min-width: 768px) {
-  .fonctionnement__choix-container {
+  .fonctionnement .fonctionnement__choix-container {
     display: grid;
     grid-template-columns: repeat(3, 29%);
     gap: 15px 30px;
@@ -214,24 +212,24 @@ input:focus {
     grid-template-rows: auto;
     grid-template-areas: "title title title" "card1 card2 card3";
   }
-  .fonctionnement__choix-container .title {
+  .fonctionnement .fonctionnement__choix-container .title {
     grid-area: title;
   }
-  .fonctionnement__choix-container .card1 {
+  .fonctionnement .fonctionnement__choix-container .card1 {
     grid-area: card1;
   }
-  .fonctionnement__choix-container .card2 {
+  .fonctionnement .fonctionnement__choix-container .card2 {
     grid-area: card2;
   }
-  .fonctionnement__choix-container .card3 {
+  .fonctionnement .fonctionnement__choix-container .card3 {
     grid-area: card3;
   }
 }
-.fonctionnement__choix-container a {
+.fonctionnement .fonctionnement__choix-container a {
   color: black;
 }
 
-.fonctionnement__choix-container__composant {
+.fonctionnement .fonctionnement__choix-container__composant {
   position: relative;
   display: flex;
   align-items: center;
@@ -243,11 +241,11 @@ input:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .fonctionnement__choix-container__composant {
+  .fonctionnement .fonctionnement__choix-container__composant {
     width: 100%;
   }
 }
-.fonctionnement__choix-container span {
+.fonctionnement .fonctionnement__choix-container span {
   position: absolute;
   top: 20px;
   left: -10px;
@@ -307,21 +305,21 @@ input:focus {
   margin: 0;
 }
 
-.restaurants_card {
+.restaurants .restaurants_card {
   position: relative;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
 }
 
-.restaurants__card a {
+.restaurants .restaurants__card a {
   position: relative;
   display: flex;
   flex-direction: column;
   height: 275px;
 }
 
-.restaurants__card a img {
+.restaurants .restaurants__card a img {
   height: 75%;
   width: 100%;
   -o-object-fit: cover;
@@ -329,7 +327,7 @@ input:focus {
   border-radius: 15px 15px 0 0;
 }
 
-.restaurants__card__content {
+.restaurants .restaurants__card__content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -339,27 +337,27 @@ input:focus {
   border-radius: 0 0 15px 15px;
 }
 
-.restaurants__card__content h3 {
+.restaurants .restaurants__card__content h3 {
   font-size: 18px;
   font-family: roboto, sans-serif;
   font-weight: 700;
   margin: 0;
 }
 
-.restaurants__card__content p {
+.restaurants .restaurants__card__content p {
   margin: 0;
   font-size: 17px;
   font-family: Roboto, sans-serif;
   font-weight: 300;
 }
 
-.restaurants__card__content__heart {
+.restaurants .restaurants__card__content__heart {
   position: absolute;
   right: 45px;
   top: 225px;
 }
 
-.restaurants__card i {
+.restaurants .restaurants__card i {
   position: absolute;
   font-size: 21px;
   cursor: pointer;
@@ -379,7 +377,7 @@ footer {
     flex-direction: row-reverse;
   }
 }
-.footer__logo h2 {
+footer .footer__logo h2 {
   color: white;
   font-size: 18px;
   font-family: shrikhand, sans-serif;
@@ -388,34 +386,34 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  .footer__logo h2 {
+  footer .footer__logo h2 {
     margin: 0 40px 10px;
   }
 }
-.footer__content {
+footer .footer__content {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 @media screen and (min-width: 768px) {
-  .footer__content {
+  footer .footer__content {
     flex-direction: row;
     gap: 25px;
     margin-right: 80px;
     align-items: center;
   }
 }
-.footer__content a {
+footer .footer__content a {
   color: white;
   text-decoration: none;
 }
 
-.fa-utensils {
+footer .footer__content a .fa-utensils {
   margin-right: 10px;
 }
 
-.fa-handshake {
+footer .footer__content a .fa-handshake {
   margin-right: 5px;
   rotate: 325deg;
 }
@@ -462,7 +460,7 @@ footer {
   margin-left: 15px;
 }
 
-.card-box__container {
+.card-box .card-box__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -471,7 +469,7 @@ footer {
   gap: 15px;
 }
 
-.card-box__container__carte {
+.card-box .card-box__container__carte {
   background-color: #ffffff;
   display: flex;
   justify-content: flex-start;
@@ -482,7 +480,7 @@ footer {
   overflow: hidden;
 }
 
-.card-box__container__carte-text {
+.card-box .card-box__container__carte-text {
   margin-right: auto;
   display: flex;
   gap: 5px;
@@ -494,7 +492,7 @@ footer {
   white-space: nowrap;
 }
 
-.card-box__container__carte-text h3 {
+.card-box .card-box__container__carte-text h3 {
   font-size: 16px;
   font-family: Roboto, sans-serif;
   font-weight: 600;
@@ -504,7 +502,7 @@ footer {
   overflow: hidden;
 }
 
-.card-box__container__carte-text p {
+.card-box .card-box__container__carte-text p {
   font-size: 13px;
   font-family: Roboto, sans-serif;
   font-weight: 300;
@@ -514,7 +512,7 @@ footer {
   overflow: hidden;
 }
 
-.card-box__container__carte-prix {
+.card-box .card-box__container__carte-prix {
   font-family: Roboto, sans-serif;
   font-weight: 700;
   display: flex;
@@ -523,12 +521,12 @@ footer {
   height: 100%;
 }
 
-.card-box__container__carte-prix p {
+.card-box .card-box__container__carte-prix p {
   padding-top: 25px;
   margin-right: 10px;
 }
 
-.card-box__container__carte-prix span {
+.card-box .card-box__container__carte-prix span {
   display: block;
   display: flex;
   justify-content: center;
@@ -538,7 +536,7 @@ footer {
   border-radius: 0 15px 15px 0px;
 }
 
-.card-box__container__carte-prix span .fa-circle-check {
+.card-box .card-box__container__carte-prix span .fa-circle-check {
   color: transparent;
   transition: all 0.4s;
 }
@@ -550,6 +548,10 @@ footer {
   align-items: center;
   background-color: #f6f6f6;
   width: 100%;
+}
+.cta-container .button-CTA {
+  margin: 30px 0 40px 0;
+  padding: 15px 40px;
 }
 
 /******section reservation*******/
@@ -663,4 +665,4 @@ footer {
   .accueil-restaurant-title i {
     top: 22px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
