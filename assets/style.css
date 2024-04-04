@@ -18,7 +18,7 @@ body {
 .restaurants__card__nouveau {
   position: absolute;
   top: 10px;
-  right: 20px;
+  right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,6 +64,12 @@ header {
   justify-content: center;
   position: relative;
 }
+header .arrow-left {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-size: 24px;
+}
 
 header .header__logo {
   display: flex;
@@ -76,9 +82,9 @@ header .header__logo {
   header .header__logo {
     box-shadow: none;
   }
+  
 }
 header .header__logo img {
-  width: 200px;
   height: 40px;
 }
 
@@ -181,14 +187,14 @@ header .header__gps-container .label-content {
 }
 /******section fonctionnement*******/
 .fonctionnement {
-  padding: 20px;
+  padding: 50px 0;
   margin-bottom: 40px;
   margin-left: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .fonctionnement {
-    width: 88%;
+    width: 93%;
   }
 }
 .fonctionnement h2 {
@@ -200,7 +206,8 @@ header .header__gps-container .label-content {
 .fonctionnement .fonctionnement__choix-container {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
+  margin-right: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -322,8 +329,7 @@ header .header__gps-container .label-content {
 .restaurants .restaurants__card a img {
   height: 75%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 
@@ -361,6 +367,18 @@ header .header__gps-container .label-content {
   position: absolute;
   font-size: 21px;
   cursor: pointer;
+}
+.restaurants .restaurants__card .fa-solid {
+  opacity: 0;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  
+}
+.restaurants .restaurants__card .fa-solid:hover {
+  opacity: 1;
 }
 
 /*********footer**************/
@@ -519,6 +537,8 @@ footer .footer__content a .fa-handshake {
   justify-content: center;
   align-items: center;
   height: 100%;
+  transform: translate(45px);
+  transition: all 0.4s;
 }
 
 .card-box .card-box__container__carte-prix p {
@@ -540,6 +560,44 @@ footer .footer__content a .fa-handshake {
   color: transparent;
   transition: all 0.4s;
 }
+/*************survol animation prix*************/
+.card-box .card-box__container__carte:hover .card-box__container__carte-text h2 {
+  overflow: hidden;
+}
+.card-box .card-box__container__carte:hover .card-box__container__carte-text p {
+  overflow: hidden;
+}
+.card-box .card-box__container__carte:hover .card-box__container__carte-prix {
+  transform: translate(0px);
+}
+.card-box .card-box__container__carte:hover .card-box__container__carte-prix span {
+  background: #99e2d0;
+}
+.card-box .card-box__container__carte:hover .card-box__container__carte-prix span .fa-circle-check {
+  color: white;
+  transform: rotate(2turn);
+}
+/***********animation card box***********/
+@keyframes anim-card-box {
+  0% {
+    opacity: 0;
+    transform: translatey(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0);
+  }
+  }
+  .entrees {
+    animation: anim-card-box 0.4s;
+  }
+  .plats {
+    animation: anim-card-box 1s;
+  }
+  .desserts {
+    animation: anim-card-box 1,6s;
+  }
+
 
 /****Bouton****/
 .cta-container {
@@ -600,13 +658,25 @@ footer .footer__content a .fa-handshake {
 .fa-mobile-screen-button {
   color: #7e7e7e;
 }
+.fa-mobile-screen-button:hover {
+  color: #9356dc;
+  cursor: pointer;
+}
 
 .fa-list {
   color: #7e7e7e;
 }
+.fa-list:hover {
+  color: #9356dc;
+  cursor: pointer;
+}
 
 .fa-store {
+  color: #7e7e7e;
+}
+.fa-store:hover {
   color: #9356dc;
+  cursor: pointer;
 }
 
 /*menu*/

@@ -1,0 +1,212 @@
+main {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  /*******Reglage de la photo d'accueill des pages restaurants ****************/
+  .accueil-image-restaurant {
+    height: 240px;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+  }
+  /*h1 + coeur*/
+  .accueil-restaurant-titre {
+    display: flex;
+    align-items: center;
+    background-color: $primary-background;
+    border-radius: 25px 25px 0 0;
+    position: relative;
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      justify-content: center;
+    }
+    .container-coeur {
+      @media screen and (min-width: 768px) {
+        position: relative;
+      }
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-family: shrikhand;
+      font-weight: 400;
+      padding-left: 20px;
+      @media screen and (max-width: 345px) {
+        font-size: 1.5rem;
+      }
+    }
+    i {
+      cursor: pointer;
+      position: absolute;
+      top: 27px;
+      right: 35px;
+      font-size: 1.5rem;
+      @media screen and (min-width: 768px) {
+        top: -13px;
+        right: -50px;
+      }
+      @media screen and (max-width: 345px) {
+        top: 22px;
+      }
+    }
+  
+    .fa-solid {
+      opacity: 0;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      transition: all 0.4s ease-in-out;
+      background-image: $button-background;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  /*superposition conteneur sur img restaurant*/
+  .container-menu {
+    background-color: #f6f6f6;
+    border-radius: 25px 25px 0 0;
+    width: 100%;
+    margin-top: -25px;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+      width: 80%;
+      display: flex;
+      align-items: center;
+    }
+  }
+  /* descriptif menu titre et ligne*/
+  .card-box {
+    @media screen and (min-width: 768px) {
+      width: 70%;
+    }
+    background-color: $primary-background;
+    h2 {
+      font-family: Roboto;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 20px 15px 10px 15px;
+    }
+    .ligne {
+      width: 50px;
+      height: 3px;
+      background-color: #99e2d0;
+      margin-left: 15px;
+    }
+    /**********parie menu &animationPrix************/
+    .card-box__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 10px;
+      gap: 15px;
+  
+      &__carte {
+        background-color: $segondary-background;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 100%;
+        border-radius: 15px;
+        height: 60px;
+        overflow: hidden;
+        /***survolAnimation***/
+        &:hover {
+          & .card-box__container__carte-text {
+            h2 {
+              overflow: hidden;
+            }
+            p {
+              overflow: hidden;
+            }
+          }
+          & .card-box__container__carte-prix {
+            transform: translateX(0px);
+            & .fa-circle-check {
+              color: white;
+              transform: rotate(2turn);
+            }
+            & span {
+              background-color: #99e2d0;
+            }
+          }
+        }
+      }
+      &__carte-text {
+        margin-right: auto;
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        padding: 0 0 0 15px;
+        overflow: hidden;
+        white-space: nowrap;
+        h3 {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          font-size: 1rem;
+          font-family: Roboto;
+          font-weight: 600;
+          margin: 0;
+        }
+        p {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          font-size: 0.8rem;
+          font-family: Roboto;
+          font-weight: 300;
+          margin: 0;
+        }
+      }
+      &__carte-prix {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-family: Roboto;
+        font-weight: 700;
+        transform: translateX(45px);
+        transition: all 0.4s;
+        p {
+          padding-top: 25px;
+          margin-right: 10px;
+        }
+        span {
+          display: block;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 50px;
+          border-radius: 0 15px 15px 0px;
+          .fa-circle-check {
+            color: transparent;
+            transition: all 0.4s;
+          }
+        }
+      }
+    }
+  }
+  /****Bouton****/
+  .cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-background;
+    width: 100%;
+    .button-CTA {
+      margin: 30px 0 40px 0;
+      padding: 15px 40px;
+    }
+  }
