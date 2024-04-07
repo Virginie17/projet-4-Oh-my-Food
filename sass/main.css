@@ -180,7 +180,7 @@ footer .footer__content a .fa-utensils {
 }
 footer .footer__content a .fa-handshake {
   margin-right: 5px;
-  rotate: 325deg;
+  transform: rotate(325deg);
 }
 
 /*********Header*********/
@@ -228,7 +228,7 @@ header .header__gps-container .fa-location-dot {
 header .header__gps-container input {
   border: none;
   padding: 5px;
-  font-size: 1rem;
+  font-size: 16px;
   background-color: #eaeaea;
   font-weight: bold;
   width: 130px;
@@ -254,7 +254,7 @@ header .header__gps-container .label-content {
   }
 }
 
-/*******Reglage de la photo d'accueill des pages restaurants ****************/
+/*******Reglage de la photo d'accueil des pages restaurants ****************/
 .accueil-image-restaurant {
   height: 240px;
   width: 100%;
@@ -286,14 +286,14 @@ header .header__gps-container .label-content {
   }
 }
 .accueil-restaurant-title h1 {
-  font-size: 1.75rem;
+  font-size: 28px;
   font-family: shrikhand;
   font-weight: 400;
   padding-left: 20px;
 }
 @media screen and (max-width: 345px) {
   .accueil-restaurant-title h1 {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 }
 .accueil-restaurant-title i {
@@ -301,7 +301,7 @@ header .header__gps-container .label-content {
   position: absolute;
   top: 27px;
   right: 35px;
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 @media screen and (min-width: 768px) {
   .accueil-restaurant-title i {
@@ -346,7 +346,7 @@ header .header__gps-container .label-content {
 /* descriptif menu titre et ligne*/
 .card-box {
   background-color: #f6f6f6;
-  /**********partie menu animationPrix************/
+  /**********partie menu animation Prix************/
 }
 @media screen and (min-width: 768px) {
   .card-box {
@@ -383,7 +383,7 @@ header .header__gps-container .label-content {
   border-radius: 15px;
   height: 60px;
   overflow: hidden;
-  /***survolAnimation***/
+  /***survol Animation***/
 }
 .card-box .card-box__container__carte:hover .card-box__container__carte-text h2 {
   overflow: hidden;
@@ -416,7 +416,7 @@ header .header__gps-container .label-content {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  font-size: 1rem;
+  font-size: 16px;
   font-family: Roboto;
   font-weight: 600;
   margin: 0;
@@ -425,7 +425,7 @@ header .header__gps-container .label-content {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  font-size: 0.8rem;
+  font-size: 13px;
   font-family: Roboto;
   font-weight: 300;
   margin: 0;
@@ -503,11 +503,12 @@ header .header__gps-container .label-content {
 .fonctionnement {
   padding: 20px;
   margin-bottom: 40px;
-  margin-left: 30px;
 }
 @media screen and (min-width: 768px) {
   .fonctionnement {
     width: 88%;
+    margin-left: 70px;
+    margin-right: 50px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -577,7 +578,7 @@ header .header__gps-container .label-content {
   color: white;
   justify-content: center;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 14px;
   font-family: "roboto";
 }
 .fonctionnement .fonctionnement__choix-container .container__icone {

@@ -5,7 +5,7 @@ main {
     align-items: center;
   }
 }
-/*******Reglage de la photo d'accueill des pages restaurants ****************/
+/*******Reglage de la photo d'accueil des pages restaurants ****************/
 .accueil-image-restaurant {
   height: 240px;
   width: 100%;
@@ -32,12 +32,12 @@ main {
     }
   }
   h1 {
-    font-size: 1.75rem;
+    font-size: 28px;
     font-family: shrikhand;
     font-weight: 400;
     padding-left: 20px;
     @media screen and (max-width: 345px) {
-      font-size: 1.5rem;
+      font-size: 24px;
     }
   }
   i {
@@ -45,7 +45,7 @@ main {
     position: absolute;
     top: 27px;
     right: 35px;
-    font-size: 1.5rem;
+    font-size: 24px;
     @media screen and (min-width: 768px) {
       top: -13px;
       right: -50px;
@@ -100,7 +100,7 @@ main {
     background-color: #99e2d0;
     margin-left: 15px;
   }
-  /**********partie menu animationPrix************/
+  /**********partie menu animation Prix************/
   .card-box__container {
     display: flex;
     justify-content: center;
@@ -118,7 +118,7 @@ main {
       border-radius: 15px;
       height: 60px;
       overflow: hidden;
-      /***survolAnimation***/
+      /***survol Animation***/
       &:hover {
         & .card-box__container__carte-text {
           h2 {
@@ -154,7 +154,7 @@ main {
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-        font-size: 1rem;
+        font-size: 16px;
         font-family: Roboto;
         font-weight: 600;
         margin: 0;
@@ -163,7 +163,7 @@ main {
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-        font-size: 0.8rem;
+        font-size: 13px;
         font-family: Roboto;
         font-weight: 300;
         margin: 0;
