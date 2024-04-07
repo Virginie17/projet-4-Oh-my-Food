@@ -1,35 +1,37 @@
-.restaurants_card_nouveau {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    @include flex-center;
-    align-items: center;
-    background-color: #99e2d0;
-    width: 80px;
-    height: 30px;
-    border-radius: 5px;
-    p {
-        font-family: roboto;
-        color: #008766 ;
-    }
+/********Components*********/
+/*Nouveau*/
+.restaurants__card__nouveau {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  @include flex-center;
+  align-items: center;
+  background-color: #99e2d0;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  p {
+    color: #008766;
+    font-family: Roboto;
+  }
 }
-
-.button-CTA {
+  /*boutons*/
+  .button-CTA {
     background: $button-background;
     color: white;
-    border: none;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 500;
     border-radius: 25px;
     padding: 15px 20px;
-    font-family: roboto;
-    font-weight: 500;
-    font-size: 16px;
+    border: none;
     margin-bottom: 30px;
     @include shadow;
     cursor: pointer;
     transition: all 0.4s;
     &:hover {
-        @include shadow-transform;
-        transform: scale(1.01);
-        opacity: 0.9;
+      @include shadow-transform;
+      transform: scale(1.01);
+      opacity: 0.9;
     }
-}
+  }

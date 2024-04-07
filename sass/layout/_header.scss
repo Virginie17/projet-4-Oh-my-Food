@@ -1,28 +1,29 @@
+/*********Header*********/
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    .arrow-left {
-        position: absolute;
-        top: 14px;
-        left: 14px;
-        font-size: 24px;
-    }
-
-    .header__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  .arrow-left {
+    position: absolute;
+    top: 14px;
+    left: -70px;
+    font-size: 24px;
+  }
+  .header__logo {
     @include flex-center();
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     z-index: 2;
     @media screen and (min-width: 768px) {
-        box-shadow: none;    
-      }
-      img {
-        height: 40px;
-      }
+      box-shadow: none;
     }
-    .header__gps-container {
+    img {
+      width: 200px;
+      height: 40px;
+    }
+  }
+  .header__gps-container {
     @include flex-center();
     flex-direction: row;
     align-items: center;
@@ -31,26 +32,25 @@ header {
     font-family: roboto, sans-serif;
     height: 60px;
     .fa-location-dot {
-        font-size: larger;      
+      font-size: larger;
     }
-       input {
-        border: none;
-        padding: 5px;
-        font-size: 16px;
-        background-color: $header-background;
-        font-weight: bold;
-        width: 130px;
-      }
-      input:focus {
-        outline: 3px solid $color-elipse;
-        border-radius: 5px;
-      }
-      .label-content {
-        font-size: 0;
-      }
-      @media screen and (min-width: 768px) {
-        border-top: none;
-      }
+    input {
+      border: none;
+      padding: 5px;
+      font-size: 1rem;
+      background-color: $header-background;
+      font-weight: bold;
+      width: 130px;
     }
-
+    input:focus {
+      outline: 3px solid $color-elipse;
+      border-radius: 5px;
+    }
+    .label-content {
+      font-size: 0;
+    }
+    @media screen and (min-width: 768px) {
+      border-top: none;
+    }
+  }
 }
