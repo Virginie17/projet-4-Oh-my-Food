@@ -180,7 +180,7 @@ footer .footer__content a .fa-utensils {
 }
 footer .footer__content a .fa-handshake {
   margin-right: 5px;
-  transform: rotate(325deg);
+  transform: rotate(325DEG);
 }
 
 /*********Header*********/
