@@ -180,7 +180,7 @@ footer .footer__content a .fa-utensils {
 }
 footer .footer__content a .fa-handshake {
   margin-right: 5px;
-  transform: rotate(325DEG);
+  rotate: 325deg;
 }
 
 /*********Header*********/
@@ -452,6 +452,7 @@ header .header__gps-container .label-content {
   height: 100%;
   width: 50px;
   border-radius: 0 15px 15px 0px;
+  transition: all 0.4s ease-in-out;
 }
 .card-box .card-box__container__carte-prix span .fa-circle-check {
   color: transparent;
